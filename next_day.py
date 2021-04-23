@@ -1,4 +1,4 @@
-year = int(input("Input a year: "))
+year = int(input("Mention year: "))
 
 if (year % 400 == 0):
     leap_year = True
@@ -9,7 +9,7 @@ elif (year % 4 == 0):
 else:
     leap_year = False
 
-month = int(input("Input a month [1-12]: "))
+month = int(input("Mention month between [1-12]: "))
 
 if month in (1, 3, 5, 7, 8, 10, 12):
     month_length = 31
@@ -22,7 +22,7 @@ else:
     month_length = 30
 
 
-day = int(input("Input a day [1-31]: "))
+day = int(input("Mention a day between [1-31]: "))
 
 if day < month_length:
     day += 1
