@@ -1,0 +1,6 @@
+file = open("demo.txt", "w")
+file.write("This is how you write in a file")
+file.close()
+file = open("demo.txt", "r")
+print(file.read())
+file.close()
